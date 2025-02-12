@@ -1,0 +1,43 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --twitter-blue: #1DA1F2;
+  --twitter-blue-hover: #1a91da;
+  --twitter-black: #14171A;
+  --twitter-dark-gray: #657786;
+  --twitter-light-gray: #AAB8C2;
+  --twitter-extra-light-gray: #E1E8ED;
+  --twitter-background: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--twitter-background);
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--twitter-blue);
+  transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+
+.icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
