@@ -11,18 +11,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class TweetComposerComponent {
   tweetText = '';
-  textareaRows = 1;
 
   onInput(event: Event) {
     const textarea = event.target as HTMLTextAreaElement;
-    this.textareaRows = Math.min(Math.max(1, Math.ceil(textarea.scrollHeight / 24)), 15);
   }
 
   postTweet() {
     if (this.tweetText.trim()) {
       console.log('Posted tweet:', this.tweetText);
       this.tweetText = '';
-      this.textareaRows = 1;
     }
   }
 }
